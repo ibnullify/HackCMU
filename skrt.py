@@ -1,15 +1,4 @@
-
-<doctype html>
-<html lang="en">
-	<head>
-	    	<title>Pic Me!</title>
-	</head>
-	<body>
-		<p> Hello World! </p>
-		<form action="/action_page.php" method="get">
-  			<button type="submit" formaction="/analyzing_album">button</button>
-		</form>
-		<form action="Loan.jsp" method="POST"><msp:evaluate>
+<form action="Loan.jsp" method="POST"><msp:evaluate>
 		Get["Business`loanspecial`"]; 
 		Get["Cluster`"];
 	</msp:evaluate><table><tr><td><select name="Type" size="1"><option value="1" ${param.Type == '1' ? 'selected="selected"' : ''}>
@@ -34,5 +23,3 @@
 				MSPFormatForCluster[Style[Figure[$$Type, $$Amount, $$Rate,$$Period], Bold], 
 				StandardForm]]]
 	</msp:evaluate></div></c:if>
-	</body>
-</html>
