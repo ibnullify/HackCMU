@@ -8,7 +8,7 @@ app.secret_key = os.urandom(32)
 DIR = path.dirname(__file__)
 @app.route('/')
 def root():
-    return render_template('homepage.html')
+    return render_template('index.html')
 
 
 @app.route('/analyzing_album', methods=['GET'])
