@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="static/img/favicon.png" type="image/png">
+        <title>Buildarch Multi</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="static/css/bootstrap.css">
+        <link rel="stylesheet" href="static/vendors/linericon/style.css">
+        <link rel="stylesheet" href="static/css/font-awesome.min.css">
+        <link rel="stylesheet" href="static/vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="static/vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="static/vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="static/vendors/animate-css/animate.css">
+        <link rel="stylesheet" href="static/vendors/popup/magnific-popup.css">
+        <link rel="stylesheet" href="static/vendors/flaticon/flaticon.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="static/css/style.css">
+        <link rel="stylesheet" href="static/css/responsive.css">
+    </head>
+    <body>
+        
+        <!--================Header Menu Area =================-->
+        <header class="header_area">
+            <div class="main_menu">
+            	<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container box_1620">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<a class="navbar-brand logo_h" href="index.html" id="icon" ><img src="img/logo.png" alt="" width = 95px height = 95px></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<!-- <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav ml-auto">
+								<li class="nav-item"><a class="nav-link" href="index.html" id ="bt1">Home</a></li>  -->
+								<!-- <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li> 
+								<li class="nav-item"><a class="nav-link" href="service.html">Services</a>
+								<li class="nav-item submenu dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a class="nav-link" href="projects.html">Projects</a>
+										<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
+									</ul>
+								</li> 
+								<li class="nav-item submenu dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+										<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
+									</ul> -->
+								<!-- </li>  -->
+								<!-- <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li> -->
+<!-- 							</ul>
+						</div>  -->
+					</div>
+            	</nav>
+            </div>
+        </header>
+        <!--================Header Menu Area =================-->
+        
+        <!--================Home Banner Area =================-->
+        <section class="home_banner_area">
+            <div class="banner_inner">
+                <div class="container">
+                    <div class="banner_content text-center" id="firstB">
+                        <p id="pic">Pic Me</p>
+                        <p id="des">Cherish every moment. Don't let your memories fly away.</p>
+                        <strong id="url"> URL Link: </strong>
+			<!--                         <input class="form-control" id = "urlForm" type="text" placeholder="Type in URL Link"> <button type="button" class="btn btn-primary" id = "submit">Submit</button> --><!--
+                            <div class="input-group d-flex flex-row" id="urlDiv">
+                                <input class="form-control" id = "urlForm" type="text" placeholder="Type in URL Link">     
+                            </div>
+                        <p></p>
+                        <strong id="urimg"> Upload the image of you</strong>
+                        <form action="/action_page.php">
+                        <input type="file" name="pic" id="file" accept="image/*">
+                        </form>
+                        <button class="btn sub-btn" id="submitBtn" onclick="window.location.href='photo.html'">Submit</button>
+			-->
+
+			<form action = "http://localhost:5000/analyzing_album" enctype="multipart/form-data" method = "POST">
+                          <div class="input-group d-flex flex-row">
+                            <input class="form-control" name="url" id="urlForm" type="text" placeholder="Type in URL Link" required/>     
+                          </div>
+                          <p></p>
+                          <strong id="urimg"> Upload the image of you</strong>
+                          
+                          <input type="file" name="pic" id="file" accept="image/*" required/>
+			  <br>
+			  <input type="submit"  class="btn sub-btn" id="submitBtn" value="Submit">
+			</form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--================End Home Banner Area =================-->
+        
+        <!--================Concept Area =================-->
+        <section class="concept_area">
+        	<div class="box_1620">
+        		<div class="row m0">
+        			<div class="left_img">
+						<img src="static/img/concept-1.jpg" alt="">
+					</div>
+					<div class="right_text">
+						<div class="concept_text row m0">
+							<div class="concept_text_inner">
+								<h4 id="phrase">Don't let it slip by</h4>
+								<p>Have you ever had trouble finding photos of yourself in a collection of photos in your school field day, family picnic, or any big events? Pic Me is your answer.</p> 
+                                <p>Type in the URL link of the album and the image of yourself, and Pic Me will Pic You.</p>
+							</div>
+						</div>
+					</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Concept Area =================-->
+        
+        <!--================Feature Area =================-->
+<!--         <section class="feature_area">
+			<div class="left_feature">
+				<div class="f_item">
+					<h4><i class="flaticon-city"></i> Architecture</h4>
+					<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price.</p>
+				</div>
+				<div class="f_item">
+					<h4><i class="flaticon-city"></i> Architecture</h4>
+					<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price.</p>
+				</div>
+				<div class="f_item">
+					<h4><i class="flaticon-city"></i> Architecture</h4>
+					<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price.</p>
+				</div>
+			</div>
+			<div class="right_feature">
+				<img src="img/feature-1.jpg" alt="">
+			</div>
+        </section> -->
+        <!--================End Feature Area =================-->
+        
+        <!--================Fun Fact Area =================-->
+<!--         <section class="fun_fact_area p_120">
+        	<div class="container">
+        		<div class="main_title">
+        			<p>CAREER OVERVIEW</p>
+        			<h2>Quick Facts</h2>
+        		</div>
+        		<div class="row fun_fact_inner">
+        			<div class="col-lg-3 col-sm-6">
+        				<div class="fun_fact_item">
+        					<h4 class="counter">596</h4>
+        					<p>Projects Completed</p>
+        				</div>
+        			</div>
+        			<div class="col-lg-3 col-sm-6">
+        				<div class="fun_fact_item">
+        					<h4 class="counter">552</h4>
+        					<p>Really Happy Clients</p>
+        				</div>
+        			</div>
+        			<div class="col-lg-3 col-sm-6">
+        				<div class="fun_fact_item">
+        					<h4 class="counter">1009</h4>
+        					<p>Cups of Coffee Taken</p>
+        				</div>
+        			</div>
+        			<div class="col-lg-3 col-sm-6">
+        				<div class="fun_fact_item">
+        					<h4 class="counter">435</h4>
+        					<p>In House Professionals</p>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section> -->
+        <!--================End Fun Fact Area =================-->
+        
+        <!--================Testimonials Area =================-->
+<!--         <section class="testimonials_area">
+        	<div class="container box_1620">
+        		<div class="testi_slider owl-carousel">
+        			<div class="item">
+						<div class="testi_item">
+							<img src="img/testimonials/testi-1.png" alt="">
+							<p>As conscious traveling Paupers we must always be concerned about our dear Mother Earth. If you think about it, you travel across her face  and She is the host to your journey. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+							<h4>Fanny Spencer</h4>
+							<ul class="list">
+								<li><a href="#"><i class="fa fa-star"></i></a></li>
+								<li><a href="#"><i class="fa fa-star"></i></a></li>
+								<li><a href="#"><i class="fa fa-star"></i></a></li>
+								<li><a href="#"><i class="fa fa-star"></i></a></li>
+								<li><a href="#"><i class="fa fa-star-half-o"></i></a></li>
+							</ul>
+						</div>
+        			</div>
+        			<div class="item">
+						<div class="testi_item">
+							<img src="img/testimonials/testi-2.png" alt="">
+							<p>As conscious traveling Paupers we must always be concerned about our dear Mother Earth. If you think about it, you travel across her face  and She is the host to your journey. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+							<h4>Fanny Spencer</h4>
+							<ul class="list">
+								<li><a href="#"><i class="fa fa-star"></i></a></li>
+								<li><a href="#"><i class="fa fa-star"></i></a></li>
+								<li><a href="#"><i class="fa fa-star"></i></a></li>
+								<li><a href="#"><i class="fa fa-star"></i></a></li>
+								<li><a href="#"><i class="fa fa-star-half-o"></i></a></li>
+							</ul>
+						</div>
+        			</div>
+        		</div>
+        	</div>
+        </section> -->
+        <!--================End Testimonials Area =================-->
+        
+        <!--================Projects Area =================-->
+<!--         <section class="project_area p_120">
+        	<div class="container box_1620">
+        		<div class="main_title">
+        			<p>CAREER OVERVIEW</p>
+        			<h2>Recent Projects</h2>
+        		</div>
+        		<div class="row project_inner imageGallery1">
+        			<div class="col-lg-3 col-sm-6">
+        				<div class="project_item">
+        					<img src="img/project/project-1.jpg" alt="">
+        					<a class="light" href="img/project/project-1.jpg"><i class="fa fa-expand"></i></a>
+        				</div>
+        			</div>
+        			<div class="col-lg-3 col-sm-6">
+        				<div class="project_item">
+        					<img src="img/project/project-2.jpg" alt="">
+        					<a class="light" href="img/project/project-2.jpg"><i class="fa fa-expand"></i></a>
+        				</div>
+        			</div>
+        			<div class="col-lg-3 col-sm-6">
+        				<div class="project_item">
+        					<img src="img/project/project-3.jpg" alt="">
+        					<a class="light" href="img/project/project-3.jpg"><i class="fa fa-expand"></i></a>
+        				</div>
+        			</div>
+        			<div class="col-lg-3 col-sm-6">
+        				<div class="project_item">
+        					<img src="img/project/project-4.jpg" alt="">
+        					<a class="light" href="img/project/project-4.jpg"><i class="fa fa-expand"></i></a>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section> -->
+        <!--================End Projects Area =================-->
+        
+
+        <!--================End Clients Logo Area =================-->
+        
+        <!--================ start footer Area  =================-->	
+        <footer class="footer-area p_120">
+            <div class="container">
+				<div class="single-footer-widget footer_middle">
+					<h6 class="footer_title">Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved</h6>
+					<p>Contact Us with Your Questions</p>		
+					<div id="mc_embed_signup">
+						<form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
+							<div class="input-group d-flex flex-row">
+								<input name="EMAIL" placeholder="Questions" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Questions '" required="" type="email">
+								<button class="btn sub-btn"><span class="lnr lnr-location"></span></button>		
+							</div>									
+							<div class="mt-10 info"></div>
+						</form>
+					</div>
+				</div>
+                <div class="footer-bottom footer_copy">
+                    <p class="footer-text"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+<!--                     <div class="footer-social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                        <a href="#"><i class="fa fa-behance"></i></a>
+                    </div> -->
+                </div>
+            </div>
+        </footer>
+		<!--================ End footer Area  =================-->
+        
+        
+        
+        
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="static/js/jquery-3.2.1.min.js"></script>
+        <script src="static/js/popper.js"></script>
+        <script src="static/js/bootstrap.min.js"></script>
+        <script src="static/js/stellar.js"></script>
+        <script src="static/vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="static/vendors/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="static/vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="static/vendors/isotope/isotope-min.js"></script>
+        <script src="static/vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="static/js/jquery.ajaxchimp.min.js"></script>
+        <script src="static/vendors/counter-up/jquery.waypoints.min.js"></script>
+        <script src="static/vendors/counter-up/jquery.counterup.min.js"></script>
+        <script src="static/js/mail-script.js"></script>
+        <script src="static/vendors/popup/jquery.magnific-popup.min.js"></script>
+        <script src="static/vendors/scroll/jquery.nicescroll.min.js"></script>
+        <script src="static/js/theme.js"></script>
+    </body>
+
+</html>
