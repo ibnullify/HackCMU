@@ -27,14 +27,38 @@ Table of Content:
 /*font Variables*/
 /*Color Variables*/
 /*=================== fonts ====================*/
-@import url("https://fonts.googleapis.com/css?family=Heebo:300,400,500,700,800|Roboto:300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Heebo:300,400,500,700,800|Roboto:300,400,500,700|Montserrat:300, 400, 500, 700");
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
+#pic{
+  font-size: 80px;
+  color: #14437a;
+  font-family: Montserrat;
+  font-weight: bold;
+}
+#title1{
+  font-family: slabo;
+  color: black;
+}
+
+#des{
+  font-weight: bold;
+  color: #106edd;
+}
+
+#firstB{
+  opacity: 0.9;
+  color: #104583;
+
+}
 #url{
   font-size: 20px;
   margin-right: 600px;
 }
 
+#urlDiv{
+  width: 700px;
+}
 #phrase{
   font-size: 34px;
 }
@@ -50,7 +74,7 @@ Table of Content:
 }
 
 #urlForm{
-  width: 250px;
+  width: 0.8;
   margin-left: 60px;
 }
 
@@ -600,7 +624,7 @@ NAVNAV
   z-index: 1;
   background: url(../img/bg.jpg) no-repeat scroll center center;
   background-size: cover;
-  opacity: 0.85;
+  opacity: 0.75;
 }
 
 .home_banner_area .banner_inner {
@@ -3706,8 +3730,8 @@ h6 {
 ============================================================================================ */
 .concept_area {
   overflow: hidden;
-  padding-top: 170px;
-  padding-bottom: 170px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .concept_area .left_img {
@@ -3718,8 +3742,8 @@ h6 {
 .concept_area .right_text {
   width: calc(50% + 80px);
   background: #000;
-  margin-top: -50px;
-  margin-bottom: -50px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .concept_area .right_text .concept_text {
