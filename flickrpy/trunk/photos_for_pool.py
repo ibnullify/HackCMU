@@ -93,7 +93,7 @@ def main(*argv):
     groupid = args[0]
     
     urls = getPhotoURLs(groupid, size, number, equal)
-    print len(urls)
+    #print len(urls)
     for url in urls:
         print url
         

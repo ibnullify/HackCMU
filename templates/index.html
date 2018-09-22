@@ -71,16 +71,31 @@
                         <h2>PIC ME</h2>
                         <p>Cherish every moment. Don't let your memories fly away.</p>
                         <strong id="url"> URL Link: </strong>
-<!--                         <input class="form-control" id = "urlForm" type="text" placeholder="Type in URL Link"> <button type="button" class="btn btn-primary" id = "submit">Submit</button> -->
+			<!--                         <input class="form-control" id = "urlForm" type="text" placeholder="Type in URL Link"> <button type="button" class="btn btn-primary" id = "submit">Submit</button> -->
+			<!-- <form action="/analyzing_album">
                             <div class="input-group d-flex flex-row">
                                 <input class="form-control" id = "urlForm" type="text" placeholder="Type in URL Link">     
                             </div>
                         <p></p>
                         <strong id="urimg"> Upload the image of you</strong>
-                        <form action="/action_page.php">
+                        
                         <input type="file" name="pic" id="file" accept="image/*">
                         </form>
                         <button class="btn sub-btn" id="submitBtn" onclick="window.location.href='photo.html'">Submit</button>
+			-->
+			
+			<form action = "http://localhost:5000/analyzing_album" enctype="multipart/form-data" method = "POST">
+                          <div class="input-group d-flex flex-row">
+                                <input class="form-control" name="url" id="urlForm" type="text" placeholder="Type in URL Link" required/>     
+                            </div>
+                            <p></p>
+                            <strong id="urimg"> Upload the image of you</strong>
+                        
+                            <input type="file" name="pic" id="file" accept="image/*" required/>
+			    <br>
+			    <input type="submit"  class="btn sub-btn" id="submitBtn" value="Submit">
+			</form>
+                     
                     </div>
 
                 </div>
